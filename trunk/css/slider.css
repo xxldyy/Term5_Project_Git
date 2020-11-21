@@ -7,6 +7,7 @@
 				height: 100px;
 				position: relative;
 				overflow: hidden;
+				
 			}
 			
 			.pptbox  .innerwrapper{
@@ -36,32 +37,34 @@
 			}
 			
 			.btnleft{
-				width: 20px;
+				width: 30px;
 				height: 50px;
 				position: absolute;
 				left:0;
 				top:25px;
-				background-color: black;
-				background-image:url(../images/nav.png);
-				background-position: -10px 4px;
+				background-color: white;
+				background-image:url(../img/7.png);
+				background-position: -20px;
 				cursor: pointer;
-				z-index: 77;
+				z-index: 100;
 			}
 			
 			.btnright{
-				width: 20px;
+				width: 30px;
 				height: 50px;
 				position: absolute;
 				right:0;
 				top:25px;
-				background-color: black;
-				background-image:url(../images/nav.png);
-				background-position: -54px 4px;
+				background-color: white;
+				background-image:url(../img/l.jpg);
+				background-position: -30px;
 				cursor: pointer;
-				z-index: 77;
+				z-index: 100;
+				
 			}
 			
 			/*控制按钮开始*/
+			
 			.controls{
 				width:96px;
 				position: absolute;
