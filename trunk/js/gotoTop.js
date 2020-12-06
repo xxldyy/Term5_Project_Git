@@ -12,7 +12,7 @@ $(function(){
             height: '50px',
             position: 'fixed',
             bottom: '100px',
-            left:'710px',
+            left:'610px',
             marginLeft: '50%',
             /*默认隐藏*/
             display: 'none',
