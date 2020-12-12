@@ -8,8 +8,8 @@
 <meta name="keywords" content="网上购物，乐购，淘宝，京东，家电，手机，电脑，服装，居家，母婴，美妆，个护，食品，生鲜，">
 <!-- 引入样式-->
 <link rel="stylesheet" href="../../css/common.css">
-<link rel="stylesheet" href="../../css/reset.css">
-<link rel="stylesheet" href="../../css/shopcart.css">
+<link rel="stylesheet" href="../../css/index.css">
+<link rel="stylesheet" href="../../css/slider.css">
 </head>
 <body>
 <!--  1.顶部  -->
@@ -57,60 +57,6 @@
 <li>电器城</li>
 </ul>
 </div>
-</div>
-<div class="shopcart container">
-    <!--全部商品-->
-    <h3>全部商品(<i class="goodscount">2</i> )</h3>
-    <!--表格-->
-    <table>
-        <thead>
-            <tr>
-                <th><input type="checkbox">全选</th>
-                <th>商品</th>
-                <th>单价</th>
-                <th>数量</th>
-                <th>小计</th>
-                <th>操作</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><input type="checkbox"></td>
-                <td>
-                    <img src="../../img/ebooks.jpg" alt="">从你的全世界路过
-                </td>
-                <td class="price">35.00</td>
-                <td>
-                    <button class="add">+</button>
-                    <input type="text" value="1">
-                    <button class="reduce">-</button>
-                </td>
-                <td class="subprice">35.00</td>
-                <td class="del">删除</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox"></td>
-                <td>
-                    <img src="../../img/ebooks.jpg" alt="">从你的全世界路过
-                </td>
-                <td class="price">41.00</td>
-                <td>
-                    <button class="add">+</button>
-                    <input type="text" value="1">
-                    <button class="reduce">-</button>
-                </td>
-                <td class="subprice">41.00</td>
-                <td class="del">删除</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="totalprice">
-        <input type="checkbox"><span>全选 </span>  
-        <span class="deletechecked">删除选择商品</span>  
-        <span>已选择<i class="count">1</i>  件商品</span>  
-        <span class="total_account">总价：<i class="total">41.00</i></span>  
-        <button class="account">去结算</button>
-    </div>
 </div>
 
 <!--  11.尾部-->
@@ -190,6 +136,9 @@
 
 <!--  引入Jquery.min.js -->
 <script src="../../js/jquery-1.11.0.js"></script>
-<script src="../../js/shopcart.js"></script>
+<!--  引入轮播插件 -->
+<script src="../../js/slider.js"></script>
+<!--  引入自己写的JS文件 -->
+<script src="../../js/index.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
+/*购物车*/
 .shopcart{
     height: 630px;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 .shopcart h3{
     font-size: 24px;
@@ -9,34 +9,48 @@
     text-indent: 20px;
     font-weight: 500;
 }
+.shopcart table{
+    height: 500px;
+    width: 1350px;
+    text-align: center;
+}
 .shopcart table thead tr th{
     height: 60px;
     background-color: #f1f1f1;
 }
-.shopcart table{
-    height: 500px;
-    width: 1200px;
-    text-align: center;
-}
-.shopcart table td, .shopcart table th{
-    border: 1px solid #ccc;
-}
-.shopcart .totalPrice{
+.shopcart .totalprice{
     height: 60px;
-    background-color:#f1f1f1;
+    background-color: #f1f1f1;
     margin-top: 20px;
     line-height: 60px;
-    font-size: 20px;
+    font-size: 18px;
 }
-.shopcart .totalPrice input{
-    margin-left: 10px;
-}
-.shopcart .totalPrice span:first-of-type{
-    margin-left: 100px;
-}
-.shopcart .totalPrice span{
+.shopcart .totalprice span{
     margin-right: 150px;
 }
+.shopcart .totalprice input{
+    margin-left: 20px;
+}
+.shopcart .totalprice span {
+    color: black;
+}
+/*总价*/
+.shopcart .totalprice span:nth-child(4){
+    color: black;
+}
+.shopcart .totalprice button {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    font-weight: 500;
+    color: #fff;
+    background-color: #ff6700;
+}
+/*account*/
+.shopcart .totalprice span:first-of-type{
+    margin-left: 100px;
+}
+
 .shopcart table button{
     width: 20px;
     height: 20px;
