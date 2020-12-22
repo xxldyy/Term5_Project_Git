@@ -9,7 +9,8 @@
 <!-- 引入样式-->
 <link rel="stylesheet" href="../../css/common.css">
 <link rel="stylesheet" href="../../css/reset.css">
-<link rel="stylesheet" href="../../css/shopcart.css">
+<link rel="stylesheet" href="../../css/register.css">
+
 </head>
 <body>
 <!--  1.顶部  -->
@@ -59,64 +60,16 @@
 </div>
 </div>
 
-<!--购物车-->
-<div class="shopcart container">
-    <!--全部商品-->
-    <h3>全部商品(<i class="goodscount">0</i> )</h3>
-    <!--表格-->
-    <table>
-        <!--表头-->
-        <thead>
-            <tr>
-                <th><input type="checkbox">全选</th>
-                <th>商品</th>
-                <th>单价</th>
-                <th>数量</th>
-                <th>小计</th>
-                <th>操作</th>
-            </tr>
-        </thead>
-        <!---身体-->
-        <tbody>
-            <tr>
-                <td><input type="checkbox"></td>
-                <td>
-                    <img src="../../img/ebooks.jpg" alt="">从你的全世界路过
-                </td>
-                <td class="price">35.00</td>
-                <td>
-                    <button class="add">+</button>
-                    <input type="text" value="1">
-                    <button class="reduce">-</button>
-                </td>
-                <td class="subprice">35.00</td>
-                <td class="del">删除</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox"></td>
-                <td>
-                    <img src="../../img/ebooks.jpg" alt="">从你的全世界路过
-                </td>
-                <td class="price">41.00</td>
-                <td>
-                    <button class="add">+</button>
-                    <input type="text" value="1">
-                    <button class="reduce">-</button>
-                </td>
-                <td class="subprice">41.00</td>
-                <td class="del">删除</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!--计算总价-->
-    <div class="totalprice">
-        <input type="checkbox"><span>全选 </span>  
-        <span class="deletechecked">删除选择商品</span>  
-        <span>已选择<i class="count">0</i>  件商品</span>  
-        <span class="total_account">总价：<i class="total">00.00</i></span>  
-        <button class="account">去结算</button>
-    </div>
+<div class="register container">
+    <h1>用户注册</h1>
+    <form id="registerForm" action="register.php">
+     <p>用户名:<input type="text" name="username"></p>
+     <p>密码:<input id="password" type="text" name="password"></p>
+     <p>确认密码:<input type="text" name="checkPassword"></p>
+     <p>电话号码:<input type="text" name="tel"></p>
+     <p>验证码:<input type="text"></p>
+     <p><input type="submit" value="立即注册"></p>
+    </form>
 </div>
 
 <!--  11.尾部-->
@@ -196,6 +149,7 @@
 
 <!--  引入Jquery.min.js -->
 <script src="../../js/jquery-1.11.0.js"></script>
-<script src="../../js/shopcartPlus.js"></script>
+<script src="../../js/jquery.validate.min.js"></script>
+<script src="../../js/register.js"></script>
 </body>
 </html>
