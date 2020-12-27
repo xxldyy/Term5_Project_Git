@@ -1,6 +1,5 @@
-.product-detail {
-    height:500px ;
-  
+.product-detail{
+    height: 500px;
     margin: 50px auto;
 }
 
@@ -8,13 +7,16 @@
     width: 340px;
     height: 470px;
     background-color:#fcfcfc;
+
 }
 .product-detail .right-box{
     width: 800px;
     height: 500px;
-    background-color:pink;
+  
+    background-color: pink;
 }
 
 .magnifier-container{
-    height: 380px !important;
+  height: 380px !important;
+
 }

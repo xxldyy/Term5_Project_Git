@@ -24,6 +24,7 @@ img{
 .magnifier{
 	width: 500px;
 	position: relative;
+
 }
 .magnifier-container{
 	width: 500px;
@@ -36,7 +37,7 @@ img{
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	background-image: url('../img/move-box.png');
+	background-image: url('../images/move-box.png');
 }
 .images-cover{
 	height: 100%;

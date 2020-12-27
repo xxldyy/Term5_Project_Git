@@ -174,8 +174,8 @@ $(function (){
     $(this).closest('tr').remove();
       }
     })
- //计算总价
- calctotalprice();
+ //计算总价的函数
+  calctotalprice();
  //计算商品数量
  calcgoodsconut();
     

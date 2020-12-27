@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/magnifier.css">
+	<title>放大镜效果</title>
+</head>
+<body >
+	
+	<div class="magnifier" id="magnifier1">
+		<div class="magnifier-container">
+			<!--当前图片显示容器-->
+			<div class="images-cover"></div>
+			
+			<!--跟随鼠标移动的盒子-->
+			<div class="move-view"></div>
+			
+		</div>
+		<div class="magnifier-assembly">
+			<!--按钮-->
+			<div class="magnifier-btn">
+				<span class="magnifier-btn-left">&lt;</span>
+				<span class="magnifier-btn-right">&gt;</span>
+			</div>
+			<!--按钮组-->
+			<!--缩略图-->
+			<div class="magnifier-line">
+				<ul class="clearfix animation03">
+					<li>
+						<div class="small-img">
+							<img src="./images/1.png" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="./images/2.png" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="./images/3.png" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="./images/4.png" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="./images/1.png" />
+						</div>
+
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<!--经过放大的图片显示容器-->
+		<div class="magnifier-view"></div>
+
+	</div>
+</body>
+<!--引入jquery.mim.js-->
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<!--引入放大镜插件-->
+<script type="text/javascript" src="./js/magnifier(1).js"></script>
+<script type="text/javascript">
+$(function() {
+//调用插件函数
+	var _magnifier = magnifier({
+		magnifier : "#magnifier1",//最外层的大容器
+		width : 500,//承载容器宽
+		height : 500,//承载容器高
+		//如果设置了移动盒子的宽度，则不计算缩放比例
+		zoom : 5//缩放比例);
+		});
+
+	/*magnifier的内置函数调用*/
+	/*
+		//设置magnifier函数的index属性
+		_magnifier.setIndex(1);
+
+		//重新载入主图,根据magnifier函数的index属性
+		_magnifier.eqImg();
+	*/
+});
+</script>
+</html>
